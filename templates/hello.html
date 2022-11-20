@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if None not in (name, time)  %}
+    <h1>Hello {{ name }}!</h1>
+    <h3>The {{ time }} time!</h3>
+{% elif name %}
+    <h1>Hello {{ name }}!</h1>
+{% else %}
+    <h1>Hello!</h1>
+{% endif %}
